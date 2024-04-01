@@ -1,0 +1,122 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+font-family: 'Poppins',sans-serif;
+}
+.bkg-img{
+  overflow: hidden;
+  width: 100%;
+  filter: blur(5px);
+  overflow: hidden;
+}
+/* nav */
+nav{
+  border-bottom: solid 1px black;
+  position: fixed;
+  height: 70px;
+}
+.desc{
+  position: absolute;
+  color: #ffff;
+  top: 40vh;
+  left: 20vh;
+}
+.infos{
+  position: absolute;
+  color: #ffff;
+  top: 80vh;
+  left: 20vh; 
+}
+.start{
+  text-decoration: none;
+}
+/* formateur */
+:root {
+  --jumbotron-padding-y: 3rem;
+}
+
+.jumbotron {
+  padding-top: var(--jumbotron-padding-y);
+  padding-bottom: var(--jumbotron-padding-y);
+  margin-bottom: 0;
+  background-color: #fff;
+}
+@media (min-width: 768px) {
+  .jumbotron {
+    padding-top: calc(var(--jumbotron-padding-y) * 2);
+    padding-bottom: calc(var(--jumbotron-padding-y) * 2);
+  }
+}
+
+.jumbotron p:last-child {
+  margin-bottom: 0;
+}
+
+.jumbotron-heading {
+  font-weight: 300;
+}
+
+.jumbotron .container {
+  max-width: 40rem;
+}
+
+footer {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+footer p {
+  margin-bottom: .25rem;
+}
+
+.box-shadow { 
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); 
+ }
+ .hed{
+  font-size: 20px;
+  margin-left: -30vh;
+ }
+ .hed a{
+  text-decoration: none;
+  margin-left: 100px;
+ }
+ .search-btn{
+  border: none;
+  background-color: blue;
+ }
+ .hello{
+  position: relative;
+  left: -80vh;
+  top: -10vh;
+ }
+ .jumbotron{
+  height: 10px;
+ }
+ .search{
+  position: relative;
+  top: -4vh;
+ }
+ .search button{
+  background: #fff;
+  border-color: rgb(1, 87, 227);
+  padding: 5px;
+  border-radius: 5px;
+ }
+ .search button:hover{
+  background-color: rgb(1, 87, 227);
+  color: #fff;
+ }
+ .search input{
+  padding: 5px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid rgb(1, 87, 227);
+ }
+ label{
+  font-size: 20px;
+ }
+ .album{
+  display: flex;
+ }
