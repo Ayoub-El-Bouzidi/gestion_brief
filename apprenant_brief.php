@@ -31,7 +31,7 @@
         <div class="text-center p-5">
           <form method="POST">
             <div class="mb-3 row">
-              <label for="subjectInput" class="col-sm-3 col-form-label text-end">Title:</label>
+              <label for="subjectInput" class="col-sm-3 col-form-label text-end">drive link:</label>
               <div class="col-sm-9">
                 <input type="text" class="form-control" id="subjectInput" aria-describedby="subjectHelp" name="title">
               </div>
