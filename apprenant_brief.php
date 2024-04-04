@@ -17,7 +17,6 @@
         <div class="hed">
             <a class="a" href="index.php" style="color: #fff;">Home</a>
             <a class="a" href="brief.php" style="color: #fff;">Briefs</a>
-            <a class="a" href="suivi.php" style="color: #fff;">Suivi</a>
         </div>
         
           <button class="navbar-toggler" type="submit" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
@@ -37,29 +36,8 @@
                 <input type="text" class="form-control" id="subjectInput" aria-describedby="subjectHelp" name="title">
               </div>
             </div>
-            </div>
-            <div class="mb-3 row">
-              <label for="imageInput" class="col-sm-3 col-form-label text-end">FIle:</label>
               <div class="col-sm-9">
-                <input type="file" class="form-control" name="joint">
-              </div>
-            </div>
-            <div class="mb-3 row">
-              <label for="startDateInput" class="col-sm-3 col-form-label text-end">Start Date:</label>
-              <div class="col-sm-9">
-                <input type="date" class="form-control" name="debut">
-              </div>
-            </div>
-            <div class="mb-3 row">
-              <label for="endDateInput" class="col-sm-3 col-form-label text-end">End Date:</label>
-              <div class="col-sm-9">
-                <input type="date" class="form-control" name="fin">
-              </div>
-            </div>
-            <div class="mb-3 row">
-              <div class="col-sm-3"></div>
-              <div class="col-sm-9">
-                <button type="submit" class="btn btn-primary" name="create" >Create Project</button>
+                <button type="submit" class="btn btn-primary" name="create" >Send Project</button>
               </div>
             </div>
           </form>
