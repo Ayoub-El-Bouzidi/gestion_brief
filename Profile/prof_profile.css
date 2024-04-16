@@ -2,7 +2,7 @@ body{
     overflow: hidden;
 }
 .gradient-custom {
-    background: #f6d365;
-    background: -webkit-linear-gradient(to right bottom, rgba(246, 211, 101, 1), rgba(253, 160, 133, 1));
-    background: linear-gradient(to right bottom, rgba(246, 211, 101, 1), rgba(253, 160, 133, 1))
+    background: #00aeff;
+    background: -webkit-linear-gradient(to right bottom, rgb(101, 203, 246), rgb(255, 255, 255));
+    background: linear-gradient(to right bottom, rgb(0, 217, 255), rgb(255, 255, 255))
     }
