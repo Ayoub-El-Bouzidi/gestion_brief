@@ -33,11 +33,11 @@
             <div class="mb-3 row">
               <label for="subjectInput" class="col-sm-3 col-form-label text-end">drive link:</label>
               <div class="col-sm-9">
-                <input type="text" class="form-control" id="subjectInput" aria-describedby="subjectHelp" name="title">
+                <input type="text" class="form-control" id="subjectInput" aria-describedby="subjectHelp" name="driveLink">
               </div>
             </div>
               <div class="col-sm-9">
-                <button type="submit" class="btn btn-primary" name="create" >Send Project</button>
+                <button type="submit" class="btn btn-primary" name="send" >Send Project</button>
               </div>
             </div>
           </form>
@@ -49,3 +49,21 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
+<?php
+  include "config/connect.php";
+
+  if(isset($_POST['send'])) { 
+      $driveLink = $_POST['driveLink'];
+  
+      $query = "INSERT INTO realisation(LIEN) VALUES (?)";
+      $stmt = $conn->prepare($query);
+      
+      $stmt->bindParam(1, $driveLink);
+
+      if ($stmt->execute()) {
+          echo "lien envoyer";
+      } else {
+          echo "ereur : " . $stmt->errorInfo();
+      }
+  }
+?>
